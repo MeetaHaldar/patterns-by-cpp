@@ -1,3 +1,10 @@
+// A
+// BC
+// DEF
+// GHIJ
+// KLMNO
+// PQRSTU
+// VWXYZ[\
 #include <iostream>
 using namespace std;
 
