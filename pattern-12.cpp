@@ -16,6 +16,23 @@ int main()
     cin >> n;
     for (int row = 0; row < 2 * n; row++)
     {
+ if (row <= n)
+        {for (int col = 0; col < n-row; col++)
+            {
+                cout << " ";
+            }
+        
+        }
+
+        else
+        {
+            for (int col = 1; col <= n-((2 * n) - row); col++)
+            {
+                cout << " ";
+            }
+
+            
+        }
 
         if (row <= n)
         {for (int col = 0; col < row; col++)
