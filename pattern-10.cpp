@@ -10,20 +10,16 @@ int main()
 {
     int n;
     cin >> n;
-    for (int i = 1; i <= n; i++)
-    {
-        for (int j = 1; j <= n; j++)
-        {
-            if (j <= (n - i))
-            {
-                cout << " ";
-                 cout << "*";
-            }
-            else
-            {
-                cout << "*";
-            }
-        }
-        cout << endl;
-    }
+  for(int row=0; row<n;row++)
+  {
+      for(int space =0;space<n-row;space++)
+      {
+          cout<<" ";
+      }
+      for(int col=0;col<(2*row)+1;col++)
+      {
+          cout<<"*";
+      }
+      cout<<endl;
+  }
 }
