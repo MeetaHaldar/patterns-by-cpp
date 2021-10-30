@@ -6,21 +6,20 @@ int main()
     cin>>n;
     for(int row=1;row<=(2*n)-1;row++ )
     {
-
+int colLimit=row>n?2*n-row:row;
 int spacelimit = row>n? (row-n):(n-row);
         for(int space=0; space<spacelimit;space++)
         {
-            cout<<" ";
+            cout<<"  ";
         }
-        for(int col=row; col>=1;col-- )
-        { 
-            cout<<col;   
-           }
-        
-        
-        for(int col=2; col<=row;col++ )
+
+      for(int col=colLimit; col>=1;col-- )
         {
-            cout<<col;
+            cout<<col<<" ";
+        }
+        for(int col=2; col<=colLimit;col++ )
+        {
+            cout<<col<<" ";
         }
         cout<<endl;
 
